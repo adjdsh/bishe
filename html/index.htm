@@ -1,0 +1,548 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>首页 | 驴友网</title>
+	<link rel="stylesheet" href="css/global.css" media="all"/>
+	<link rel="stylesheet" href="css/boxy,jquery.fancybox-1.3.4.css"/>
+	<link rel="stylesheet" type="text/css" href="css/cityguide.css"  />
+    <link rel="stylesheet" type="text/css" href="css/index.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css" media="all">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+    <script type="text/javascript">
+    let userjson = '';
+    let c_cityinfo = '';
+</script>
+<!-- 合并jquery and $LAB -->
+<script type="text/javascript" src="js/jquery-1.4.4.min,LAB.min.js"></script>
+    <link rel="stylesheet" href="css/faxian.css">
+</head>
+<body>
+<!--图片更多-&#45;&#45;swiper-->
+<div class="swiper-box">
+    <div class="box">
+        <div class="swiper-container gallery-top">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(images/g1.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(images/g2.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(images/g3.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(images/g4.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(images/g5.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(images/g6.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(images/g7.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(images/g8.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(images/g9.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(images/g10.jpg)"></div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+        </div>
+        <div class="swiper-container gallery-thumbs">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(images/g1.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(images/g2.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(images/g3.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(images/g4.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(images/g5.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(images/g6.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(images/g7.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(images/g8.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(images/g9.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(images/g10.jpg)"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="header">
+    <div class="headWrap">
+        <div class="headTop fn-clear">
+            <h1 class="logo">
+                <a href="index.htm" title="驴友网" style="float: left;" >驴友网</a>
+            </h1>
+            <h2 class="slogan" title="在旅途中相遇">在旅途中相遇</h2>
+
+            <div class="loginInfo">                
+                <ul class="not_login">
+                    <li style="float:right"><a href="login/register.htm" class="btn_reg">注册</a></li>
+                    <li  style="float:right"><a href="login/login.htm"  id="top-nav-login" class="btn_login">登录</a></li>
+                </ul>
+            </div>
+        </div>
+        <ul class="dropdown">
+            <li class="current">
+                <a href="index.htm" >首页</a>
+            </li>
+            <li>
+                <a href="memory/memory.htm">旅游记忆</a>
+            </li>
+            <li>
+				<a href="traveller/traveller.htm">结伴游</a>
+			</li>
+            <li>
+				<a href="strategy/strategy.htm">景点攻略</a>
+			</li>
+		</ul>
+				 
+		<div class="navSearch">
+			<form action="memory/memory_search.htm" method="get" id="searchForm" target="_blank">
+				<input name="k" type="text" class="top-search-input" id="searchKey" placeholder="搜索旅游记忆" maxlength="50" autocomplete="off"/>
+                <input name="" type="submit" value="搜索" class="search_btn">
+            </form>
+			<div id="keyword_tip_content"></div>
+		</div>
+	</div>
+</div>
+<!--top end-->
+
+<!--main body-->
+<div id="container">
+<div id="mainWrapper" class="cf">
+<div class="bg-box">
+    <img class="first" src="images/b1.jpg" alt="">
+    <img src="images/b2.jpg" alt="">
+    <img src="images/b3.jpg" alt="">
+    <img src="images/b4.jpg" alt="">
+    <img src="images/b5.jpg" alt="">
+    <code>
+        <code class="first">1</code>
+        <code>2</code>
+        <code>3</code>
+        <code>4</code>
+        <code>5</code>
+    </code>
+    <div class="left">&lt;</div>
+    <div class="right">&gt;</div>
+</div>
+<div class="sceneInfo">
+    <div class="sceneView fn-clear ">
+        <div class="scenePic">
+			<ul id="slider" class="slider">
+            	<li>
+					<a href="">
+						<img src="images/intro_201301102119_-1.jpg" width="530" height="325" alt="观澜版画村 画中有话" title="观澜版画村 画中有话">
+					</a>
+                    <div class="alpha-txt txt-info">
+                        <h2>观澜版画村 画中有话</h2>
+                        <p>久负盛名客家小村，都市繁华深处的一块净土，深圳最美丽的乡村。</p>
+                    </div>
+                </li>
+                <li>
+					<a href="">
+						<img src="images/intro_201301102121_-1.jpg" width="530" height="325" alt="玩水嬉游 海滩撒欢" title="玩水嬉游 海滩撒欢">
+					</a>
+                    <div class="alpha-txt txt-info">
+                        <h2>玩水嬉游 海滩撒欢</h2>
+                        <p>深圳拥有滩长、浪软、沙细的多个海滩，去寻找最休闲最娱乐最美丽的那片海滩吧。</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/intro_201301102121_-2.jpg" width="530" height="325" alt="大鹏古城 深圳发源地" title="大鹏古城 深圳发源地">
+                    </a>
+                    <div class="alpha-txt txt-info">
+                        <h2>大鹏古城 深圳发源地</h2>
+                        <p>古城小巷间，隐匿着多少失落的历史光阴，寻古探幽，发现历史与禅意。</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/intro_201301102121_-3.jpg" width="530" height="325" alt="大望梧桐  深圳桃花源" title="大望梧桐  深圳桃花源">
+                    </a>
+                    <div class="alpha-txt txt-info">
+                        <h2>大望梧桐  深圳桃花源</h2>
+                        <p>不经意间，在深圳大望，发现那么一个地方，只一眼，所有小时候的记忆呼之欲出。 </p>
+                    </div>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/intro_201301102121_-4.jpg" width="530" height="325" alt="一街两制  中英街" title="一街两制  中英街">
+                    </a>
+                    <div class="alpha-txt txt-info">
+                        <h2>一街两制  中英街</h2>
+                        <p>沧桑和繁华的中英街，深圳特有的、全世界独一无二的“一街两制”免税商业街。 </p>
+                    </div>
+                </li>
+			</ul>
+		</div>
+    
+               
+        <div class="sceneIntro">
+            <div class="sceneIntro-head">
+                <h2 class="fn-left">系统公告</h2></div>
+			
+			<p><span class="fn-clear">欢迎进入驴友网，更多公告信息动态更新......</span></p><br />
+				
+            <div class="scene-subcnt">
+                <ul class="guide-tag">
+                    <li> <a href="#" class="wantGo" >不经意间，只一眼，所有小时候的记忆呼之欲出</a></li>
+                    <li class="gone"><a href="#" class="aleadyGo" >古城小巷，隐匿多少失落的历史光阴，发现历史与禅意</a></li>
+                    <li class="tuijian"><a href="#" class="share-city" id="share-city">久负盛名客家小村，都市繁华深处的一块净土</a></li>
+                </ul>
+            </div>
+			
+			<div class="scoreSec"><br /><br /><br /><br /><br />
+				<ul class="scene-thumbnail" id="scene-thumbnail">
+					<li>
+						<a href="images/5f45080874b9502e80cbfcc3e10c6dd3-175-175.jpg" target="_blank"
+						   rel="gallery" class="thumbnail">
+							<img src="images/5f45080874b9502e80cbfcc3e10c6dd3-175-175_c.jpg" alt="teamleader" width="70" height="70"></a>
+					</li>
+					<li>
+						<a href="images/8ec44886bac029c30e931b67be5922ec-175-175.jpg" target="_blank"
+						   rel="gallery" class="thumbnail">
+							<img src="images/8ec44886bac029c30e931b67be5922ec-175-175_c.jpg" alt="teamleader" width="70" height="70"></a>
+					</li>
+					<li>
+						<a href="images/d28a4f38621a9c8c7cfce41ddc367a68-175-175.jpg" target="_blank"
+						   rel="gallery" class="thumbnail">
+							<img src="images/d28a4f38621a9c8c7cfce41ddc367a68-175-175_c.jpg" alt="小u" width="70" height="70"></a>
+					</li>
+					<li>
+						<a href="images/f7896dc56b2f4d349da6a945d10b2546-175-175.jpg" target="_blank"
+						   rel="gallery" class="thumbnail">
+							<img src="images/f7896dc56b2f4d349da6a945d10b2546-175-175_c.jpg" alt="teamleader" width="70" height="70"></a>
+					</li>
+					<li class="more-link">
+						<a href="javascript:;">更多图片</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+    </div>
+</div>
+
+<!--热门旅游记忆-->
+<div class="ui-box fn-clear">
+    <div class="ui-title">
+        <h2 class="ui-title-cnt fn-left"><em>旅游记忆</em></h2>
+        <div class="ui-title-subcnt fn-right"><a target="_blank" href="memory/memory.htm">+更多</a></div>
+    </div>
+    <ul class="poi_hot" id="poi_hot">
+		<li>
+            <a title="成都锦里" href="memory/memory.htm">
+				<img src="images/l1.jpg" alt="成都锦里" width="221" height="300">
+            </a>
+            <p class="alpha-txt alpha-txt-green"><a target="_blank" title="成都锦里" href="#">成都锦里</a></p>
+            <div class="alpha-txt intro_info">
+                <p>成都锦里小吃街，风景优美，适合度假休闲。</p>
+            </div>
+		</li>
+		<li>
+            <a title="西丽水库" href="memory/memory.htm">
+				<img src="images/l2.jpg" alt="西丽水库" width="221" height="300">
+            </a>
+            <p class="alpha-txt alpha-txt-green"><a target="_blank" title="西丽水库" href="#">西丽水库</a></p>
+            <div class="alpha-txt intro_info">
+                <p>西丽水库历史悠久，风景优美，是春天骑行的好去处。</p>
+            </div>
+		</li>
+		<li>
+            <a title="婺源" href="memory/memory.htm">
+				<img src="images/login_poi_2013031109523.jpg" alt="婺源" width="221" height="300">
+            </a>
+            <p class="alpha-txt alpha-txt-green"><a target="_blank" title="婺源" href="#">婺源</a></p>
+            <div class="alpha-txt intro_info">
+                <p>漫步在婺源油菜花田间，不知有多么的诗情画意。</p>
+            </div>
+		</li>
+		<li>
+            <a title="小坑国家森林公园" href="memory/memory.htm">
+				<img src="images/l4.jpg" alt="小坑国家森林公园" width="221" height="300">
+            </a>
+            <p class="alpha-txt alpha-txt-green"><a target="_blank" title="小坑国家森林公园" href="#">小坑国家森林公园</a></p>
+            <div class="alpha-txt intro_info">
+                <p>韶关小坑国家森林公园清新宁静，诗歌释放压力的好地方。</p>
+            </div>
+		</li>  
+    </ul>
+</div>
+<!--热门旅游记忆- end-->
+
+<div class="ui-box fn-clear">
+    <div class="ui-title">
+        <h2 class="ui-title-cnt fn-left"><em>友情链接</em></h2>
+        <div class="ui-title-subcnt fn-right"><a href="#">+ 更多</a></div>
+    </div>
+    <div class="friend-link">
+        <div class="link-list" id="link-list">
+			<!--第一屏-->
+			<div>
+				<ul>
+					
+                    <li><a href="http://www.maidou.cn " target="_blank">旅游网</a></li>
+                  
+                    <li><a href="http://huoche.mipang.com" target="_blank">火车票查询</a></li>
+                   
+                    <li><a href="http://www.dgairport.cn/ " target="_blank">机票预定查询</a></li>
+					
+                    <li><a href="http://www.cnutg.com" target="_blank">特价机票网</a></li>
+                    
+                    <li><a href="http://piao.gaotie.cn" target="_blank">网上订票</a></li>
+                    
+				</ul>
+                       </div>			
+		</div>
+	</div>
+</div>
+<!--友情链接 end-->
+</div>
+</div>
+<!--main body end-->
+<div class="footer " >
+    <div class="footerWrap fn-clear">
+        <ul class="about_roadqu ">
+            <li><a href="#">关于驴友</a>|</li>
+            <li><a href="#">联系我们</a>|</li>
+            <li><a href="#">用户公约</a>|</li>
+            <li><a href="#">意见反馈</a>|</li>
+            <li><a href="#">帮助中心</a>|</li>
+            <li><a href="#">友情链接</a></li>   
+        </ul>
+        
+	</div>
+</div>
+<!-- footer end -->
+<a href="#map_picker_content" id="mappickerfancybox" class="disnone">更改</a>
+<div class="disnone" id="map_picker_wrap">
+    <div id="map_picker_content"></div>
+</div>
+<!--后台功能-->
+<div class="jiudian">
+    <div class="left">
+        <div>酒店</div>
+        <div>机票</div>
+        <div>自由行</div>
+        <div>旅游</div>
+        <div>火车</div>
+        <div>门票</div>
+    </div>
+    <div class="right">
+            <div class="one">
+                <span>目的地</span>
+                <input class="mudi" type="text" name="" placeholder="中文/拼音" style="width:220px;height:34px">
+            </div>
+            <div class="two">
+                <span>入住日期</span>
+                <input class="time" type="date" name="" style="width:100px;height:34px">
+                <span>离店日期</span>
+                <input type="date" name="" style="width:110px;height:34px">
+            </div>
+            <div class="three">
+                <span>酒店级别</span>
+                <select name="" id="xingji">
+                        <option value="不限">不限</option>
+                        <option value="五星级/豪华">五星级/豪华</option>
+                        <option value="四星级/高档">四星级/高档</option>
+                        <option value="三星级/舒适">三星级/舒适</option>
+                        <option value="二星级/经济">二星级/经济</option>
+                </select>
+            </div>
+            <div class="four">
+                <span>关键词</span>
+                <input type="text" style="width:220px;height:34px;color: #ccc" placeholder="(选填)酒店名/地标/商圈">
+            </div>
+                <button>搜索</button>
+    </div>
+    <div class="right">
+        <div class="one" style="text-indent:25px">
+            <span>航程类型</span>
+                <input class="dx" type="radio" name="">单程
+                <input class="dx" type="radio" name="">往返
+                <input class="dx" type="radio" name="">多程
+        </div>
+        <div class="two" >
+            <span>出发城市</span>
+            <input type="text" value="上海(SHA)">
+        </div>
+        <div class="two">
+            <span>到达城市</span>
+            <input type="text" placeholder="中文/拼音">
+        </div>
+        <div class="three" style="text-indent:85px ">
+            <input type="checkbox" name="" style="box-shadow: none">带儿童
+            <input type="checkbox" name="" style="box-shadow: none">带婴儿 &nbsp&nbsp&nbsp儿童/婴儿
+        </div>
+        <button>搜索机票</button>
+    </div>
+    <div class="right">
+        <div class="one">
+            <span>人数</span>
+            <select name="" id="" style="margin-left: 10px;width: 90px;height: 25px">
+                <option value="">1成人</option>
+                <option value="">2成人</option>
+                <option value="">3成人</option>
+                <option value="">4成人</option>
+                <option value="">5成人</option>
+                <option value="">6成人</option>
+                <option value="">7成人</option>
+            </select>
+            <select name="" id="" style="margin-left: 10px;width: 100px;height: 25px">
+                <option value="0儿童(2-12岁)">0儿童(2-12岁)</option>
+                <option value="1儿童(2-12岁)">1儿童(2-12岁)</option>
+                <option value="2儿童(2-12岁)">2儿童(2-12岁)</option>
+                <option value="3儿童(2-12岁)">3儿童(2-12岁)</option>
+                <option value="4儿童(2-12岁)">4儿童(2-12岁)</option>
+            </select>
+            <input type="checkbox">带婴儿
+            <img src="images/tan.png" alt="" style="margin-top: 10px;margin-right:5px;display: block;float: right">
+        </div>
+        <div class="two">
+            <span>航程类型</span>
+            <input style="box-shadow: none" class="dx" type="radio" name="">单程
+            <input style="box-shadow: none" class="dx" type="radio" name="">往返
+            <input style="box-shadow: none" class="dx" type="radio" name="">多程
+        </div>
+        <div class="three">
+            <span>机票</span>
+            <input style="width:65px;text-indent: 0" type="text" value="上海">
+            <input style="width:65px;text-indent: 0" type="text" placeholder="到达城市">
+            <input style="width:65px;text-indent: 0" type="text" placeholder="出发时间">
+            <input style="width:65px;text-indent: 0" type="text" placeholder="到达时间">
+        </div>
+        <div class="four">
+            <span>酒店</span>
+            <input style="width: 140px;text-indent: 0" type="text" placeholder="入住城市">
+            <input style="width: 65px;text-indent: 0" type="text" placeholder="入住时间">
+            <input style="width: 65px;text-indent: 0" type="text" placeholder="离店时间">
+        </div>
+        <button style="width: 120px">搜索机票+酒店套餐</button>
+    </div>
+    <div class="right" style="padding-top: 30px;box-sizing: border-box">
+        <span style="margin-left: 20px;color: #0A0A0A">国内:</span>
+        <span style="margin-left: 20px;color: #8FC359">周边 四川 广西 北京 福建 西安 长江三峡 张家界 杭州</span><br>
+        <span style="margin-left: 20px;color: #0A0A0A">出境:</span>
+        <span style="margin-left: 20px;color: #8FC359">港澳台 日本 韩国 美国 东南亚 大洋洲 美洲 中东 非洲 欧洲</span><br>
+        <span style="margin-left: 20px;color: #0A0A0A">特色:</span>
+        <span style="margin-left: 20px;color: #8FC359">签证 当地游 邮轮 度假公寓 自驾游 保险定制·包团游学</span><br>
+        <span style="margin-left: 20px;color: #0A0A0A">攻略:</span>
+        <span style="margin-left: 20px;color: #8FC359">目的地 旅游攻略 游记 旅游问答 旅游攻略下载</span>
+        <div class="bottom">
+            <span style="margin-left: 20px">出发地</span>
+            <input style="width: 110px" type="text" value="太原">
+            <span style="margin-left: 20px;">目的地</span>
+            <input style="width: 110px" type="text" placeholder="中文/拼音">
+        </div>
+        <button>搜索</button>
+    </div>
+    <div class="right">
+        <div class="one" style="margin-top: 60px">
+           行程类型 <input type="radio" style="box-shadow: none">单程
+            <input type="radio" style="box-shadow: none">往返
+            <input type="radio" style="box-shadow: none">中转
+        </div>
+        <div class="two">
+            出发站<input type="text" placeholder="中文/拼音/首字母" style="width: 100px">
+            到达站<input type="text" placeholder="中文/拼音/首字母">
+        </div>
+        <div class="three">
+            出发日期<input type="text" placeholder="yyyy-mm-dd" style="width: 100px">
+            返回日期<input type="text" placeholder="yyyy-mm-dd" style="width: 125px">
+        </div>
+        <button>搜索</button>
+    </div>
+    <div class="right">
+        <div class="one" style="text-indent:20px">
+            <span>热门活动：</span>
+            <a href="">门票特权日</a>
+            <a href="">早秋赏景</a>
+            <a href="">国庆提前订</a>
+            <a href="">旅行WIFI</a>
+            <a href="">日本旅行卡</a><br>
+        </div>
+        <div class="two" style="margin-top: 0;text-indent:20px">
+            <span>精选城市：</span>
+            <a href="">上海</a>
+            <a href="">广州</a>
+            <a href="">深圳</a>
+            <a href="">北京</a>
+            <a href="">成都</a>
+            <a href="">杭州</a>
+            <a href="">苏州</a>
+            <a href="">青岛</a>
+            <a href="">厦门</a>
+        </div>
+        <div class="three" style="margin-top: 0;text-indent: 20px">
+            <span>主题玩乐：</span>
+            <a href="">热气球</a>
+            <a href="">观光直升机</a>
+            <a href="">主题乐园</a>
+            <a href="">自然风光</a>
+            <a href="">当地美食</a>
+        </div>
+        <div class="four" style="margin-top: 0;text-indent: 20px;height: 50px;border-bottom: 1px dashed #DDDDDD">
+            <span>热门推荐：</span>
+            <a href="">横店影视城</a>
+            <a href="">携程钜惠</a>
+            <a href="">圆明园</a>
+            <a href="">印象武隆</a>
+        </div>
+        <div class="five" style="width: 100%;height: 34px;text-indent: 20px;margin-top: 20px">
+            关键词<input type="text" placeholder="香港"style="width: 300px">
+        </div>
+        <div class="six">
+            <img src="images/di.png" alt="">
+            <img src="images/di1.png" alt="">
+            <button>搜索</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- STUFF YOU NEED FOR BEAUTYTIPS -->
+<!--[if IE]>
+<script src="/static/js/excanvas.js" type="text/javascript" charset="utf-8"></script><![endif]-->
+<!-- /STUFF -->
+
+<!-- 图片加载透明文字开始 -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        // 幻灯片
+        $("#poi_hot li,#wanfa_pic li:first").hover(function () {
+            var $this = $(this);
+            $this.find('div.intro_info').show();
+
+        }, function () {
+            var $this = $(this);
+            $this.find('div.intro_info').hide();
+
+        })
+        $LAB.script("js/jquery.bxSlider.min.js")
+                .wait(function () {
+                    $('#slider').bxSlider({ auto:true, pager:true});
+                    $('#link-list').bxSlider({ speed:1000});
+                })
+        $("#guide_nav li").hover(function () {
+            var $this = $(this);
+            $this.addClass("guide_nav_item_hover");
+
+
+        }, function () {
+            var $this = $(this);
+            $this.removeClass("guide_nav_item_hover");
+
+        });
+
+        $('#pop-discount').live('mouseenter', function () {
+
+            isInDiscountCard = true;
+        });
+
+        $('#pop-discount').live('mouseleave', function () {
+
+            isInDiscountCard = false;
+            $("#container").trigger('click');
+        });
+
+    });
+//
+</script>
+
+</body>
+</html>
