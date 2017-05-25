@@ -153,6 +153,9 @@
   height: 83px;
   text-align: left;
 }
+.poi_hot li:hover .intro_info1{
+  display: block;
+}
 .wanfa_pic .intro_info p {
   padding: 10px;
 }
@@ -621,7 +624,7 @@
 }
 /*酒店搜索*/
 .jiudian{
-  width: auto;
+  width: 480px;
   height: 300px;
   position: absolute;
   left: 30px;
@@ -642,6 +645,7 @@
   background: #fff;
   width: 0;
   overflow: hidden;
+
 }
 
 .jiudian .left div{
