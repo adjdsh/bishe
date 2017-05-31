@@ -444,6 +444,7 @@ body .fn-hide {
   height: 310px;
   position: relative;
   width: 202px;
+  margin-left: 17px;
 }
 .hot-spots li img {
   vertical-align: top;

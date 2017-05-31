@@ -111,6 +111,39 @@
 							<p>&nbsp;&nbsp;发布者: <a target="_blank" href="#">路趣小游</a>&nbsp;&nbsp;&nbsp;&nbsp;发布时间：2017-03-15 16:51:22</p>
 						</div>
 					</li>
+					<li>
+						<a target="_blank" href="#" class="gonglue_img fn-left">
+							<img src="../images/e15faad1da662c685aff6d2d0ae13ce2_c.jpg" alt="【2013年7月2日-2013年7月2日】婺源" width="130" height="130" />
+						</a>
+						<div class="gonglue_info fn-left">
+							<h3> <a target="_blank" href="traveller_detail.htm"  title="【2013年7月1日-2013年7月5日】婺源">【2017年7月1日-2017年7月5日】婺源</a></h3>
+							<p>&nbsp;&nbsp;目的地：婺源</p>
+							<p>&nbsp;&nbsp;行程：2017年7月1日 至 2017年7月5日</p>
+							<p>&nbsp;&nbsp;发布者: <a target="_blank" href="#">路趣小游</a>&nbsp;&nbsp;&nbsp;&nbsp;发布时间：2017-03-15 16:51:22</p>
+						</div>
+					</li>
+					<li>
+						<a target="_blank" href="#" class="gonglue_img fn-left">
+							<img src="../images/6f2c19ed430e457235c76dff76a7ce57_c.jpg" alt="【2013年7月2日-2013年7月2日】深圳" width="130" height="130" />
+						</a>
+						<div class="gonglue_info fn-left">
+							<h3> <a target="_blank" href="traveller_detail.htm"  title="【2013年7月1日-2013年7月5日】深圳">【2013年7月1日-2013年7月5日】深圳</a></h3>
+							<p>&nbsp;&nbsp;目的地：深圳</p>
+							<p>&nbsp;&nbsp;行程：2017年7月1日 至 2017年7月5日</p>
+							<p>&nbsp;&nbsp;发布者: <a target="_blank" href="#">路趣小游</a>&nbsp;&nbsp;&nbsp;&nbsp;发布时间：2017-03-15 16:51:22</p>
+						</div>
+					</li>
+					<li>
+						<a target="_blank" href="#" class="gonglue_img fn-left">
+							<img src="../images/3771bde6633cf9e9b78636f1c91010de_c.jpg" alt="【2013年7月2日-2013年7月2日】碉堡楼" width="130" height="130" />
+						</a>
+						<div class="gonglue_info fn-left">
+							<h3> <a target="_blank" href="#"  title="【2013年7月1日-2013年7月5日】碉堡楼">【2017年7月1日-2017年7月5日】碉堡楼</a></h3>
+							<p>&nbsp;&nbsp;目的地：碉堡楼</p>
+							<p>&nbsp;&nbsp;行程：2017年7月1日 至 2017年7月5日</p>
+							<p>&nbsp;&nbsp;发布者: <a target="_blank" href="#">路趣小游</a>&nbsp;&nbsp;&nbsp;&nbsp;发布时间：2017-03-15 16:51:22</p>
+						</div>
+					</li>
 					
 				</ul>
 				<div class="ui-title-subcnt fn-right">
@@ -136,4 +169,16 @@
 </div>
 <!-- footer end -->
 </body>
+<script>
+	const btn=document.querySelectorAll(".search-tab li");
+	btn.forEach(function(val){
+
+		val.onclick=function(){
+			for(let i=0;i<btn.length;i++){
+				btn[i].classList.remove("select");
+			}
+			val.classList.add("select");
+		}
+	})
+</script>
 </html>
